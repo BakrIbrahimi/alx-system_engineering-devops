@@ -6,7 +6,7 @@ import requests
 
 def top_ten(subreddit):
     """Returns the first 10 hot posts ."""
-    headers = {'User-Agent': 'Bakr/1.0'}
+    headers = {'User-Agent': 'bakribra/1.0'}
     r = requests.get(f'https://www.reddit.com/r/{subreddit}/hot.json',
                      headers=headers, allow_redirects=False)
     if r.status_code == 200:
